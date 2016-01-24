@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F13CA193CC68321C339C2A8 /* Pods_Horologist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DE2951A59B82A2E704F0EB /* Pods_Horologist.framework */; };
+		84E8D8F01C54B4D3004EE675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D8EF1C54B4D3004EE675 /* AppDelegate.swift */; };
+		84E8D8F21C54B4D3004EE675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D8F11C54B4D3004EE675 /* ViewController.swift */; };
+		84E8D8F71C54B4D3004EE675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E8D8F61C54B4D3004EE675 /* Assets.xcassets */; };
+		84E8D8FA1C54B4D3004EE675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E8D8F81C54B4D3004EE675 /* LaunchScreen.storyboard */; };
+		84E8D9051C54B4D3004EE675 /* HorologistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D9041C54B4D3004EE675 /* HorologistTests.swift */; };
+		84E8D9101C54B4D3004EE675 /* HorologistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D90F1C54B4D3004EE675 /* HorologistUITests.swift */; };
+		84E8D91E1C54B52B004EE675 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D91D1C54B52B004EE675 /* Cell.swift */; };
+		84E8D9201C54B572004EE675 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D91F1C54B572004EE675 /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84E8D9011C54B4D3004EE675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E8D8E41C54B4D3004EE675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E8D8EB1C54B4D3004EE675;
+			remoteInfo = Horologist;
+		};
+		84E8D90C1C54B4D3004EE675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E8D8E41C54B4D3004EE675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E8D8EB1C54B4D3004EE675;
+			remoteInfo = Horologist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6EC5B16E9D74809ED1C89269 /* Pods-Horologist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horologist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Horologist/Pods-Horologist.debug.xcconfig"; sourceTree = "<group>"; };
+		84E8D8EC1C54B4D3004EE675 /* Horologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E8D8EF1C54B4D3004EE675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84E8D8F11C54B4D3004EE675 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84E8D8F61C54B4D3004EE675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84E8D8F91C54B4D3004EE675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84E8D8FB1C54B4D3004EE675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E8D9001C54B4D3004EE675 /* HorologistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorologistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E8D9041C54B4D3004EE675 /* HorologistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorologistTests.swift; sourceTree = "<group>"; };
+		84E8D9061C54B4D3004EE675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E8D90B1C54B4D3004EE675 /* HorologistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorologistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E8D90F1C54B4D3004EE675 /* HorologistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorologistUITests.swift; sourceTree = "<group>"; };
+		84E8D9111C54B4D3004EE675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E8D91D1C54B52B004EE675 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		84E8D91F1C54B572004EE675 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EA196C8A6BC0220C91C5BD08 /* Pods-Horologist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horologist.release.xcconfig"; path = "Pods/Target Support Files/Pods-Horologist/Pods-Horologist.release.xcconfig"; sourceTree = "<group>"; };
+		F0DE2951A59B82A2E704F0EB /* Pods_Horologist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Horologist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84E8D8E91C54B4D3004EE675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F13CA193CC68321C339C2A8 /* Pods_Horologist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E8D8FD1C54B4D3004EE675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E8D9081C54B4D3004EE675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		369F22513DA1487FA2C34657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0DE2951A59B82A2E704F0EB /* Pods_Horologist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A6DD695FD2DC084EA4DFF2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EC5B16E9D74809ED1C89269 /* Pods-Horologist.debug.xcconfig */,
+				EA196C8A6BC0220C91C5BD08 /* Pods-Horologist.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84E8D8E31C54B4D3004EE675 = {
+			isa = PBXGroup;
+			children = (
+				84E8D8EE1C54B4D3004EE675 /* Horologist */,
+				84E8D9031C54B4D3004EE675 /* HorologistTests */,
+				84E8D90E1C54B4D3004EE675 /* HorologistUITests */,
+				84E8D8ED1C54B4D3004EE675 /* Products */,
+				6A6DD695FD2DC084EA4DFF2A /* Pods */,
+				369F22513DA1487FA2C34657 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84E8D8ED1C54B4D3004EE675 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D8EC1C54B4D3004EE675 /* Horologist.app */,
+				84E8D9001C54B4D3004EE675 /* HorologistTests.xctest */,
+				84E8D90B1C54B4D3004EE675 /* HorologistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E8D8EE1C54B4D3004EE675 /* Horologist */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D8EF1C54B4D3004EE675 /* AppDelegate.swift */,
+				84E8D8F11C54B4D3004EE675 /* ViewController.swift */,
+				84E8D8F61C54B4D3004EE675 /* Assets.xcassets */,
+				84E8D8F81C54B4D3004EE675 /* LaunchScreen.storyboard */,
+				84E8D8FB1C54B4D3004EE675 /* Info.plist */,
+				84E8D91D1C54B52B004EE675 /* Cell.swift */,
+				84E8D91F1C54B572004EE675 /* Model.swift */,
+			);
+			path = Horologist;
+			sourceTree = "<group>";
+		};
+		84E8D9031C54B4D3004EE675 /* HorologistTests */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D9041C54B4D3004EE675 /* HorologistTests.swift */,
+				84E8D9061C54B4D3004EE675 /* Info.plist */,
+			);
+			path = HorologistTests;
+			sourceTree = "<group>";
+		};
+		84E8D90E1C54B4D3004EE675 /* HorologistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D90F1C54B4D3004EE675 /* HorologistUITests.swift */,
+				84E8D9111C54B4D3004EE675 /* Info.plist */,
+			);
+			path = HorologistUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84E8D8EB1C54B4D3004EE675 /* Horologist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E8D9141C54B4D3004EE675 /* Build configuration list for PBXNativeTarget "Horologist" */;
+			buildPhases = (
+				5F79C8113B30182778CD6453 /* Check Pods Manifest.lock */,
+				84E8D8E81C54B4D3004EE675 /* Sources */,
+				84E8D8E91C54B4D3004EE675 /* Frameworks */,
+				84E8D8EA1C54B4D3004EE675 /* Resources */,
+				64DC78473F17A38BB7A736A2 /* Embed Pods Frameworks */,
+				E28365038A86027647ADFB40 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Horologist;
+			productName = Horologist;
+			productReference = 84E8D8EC1C54B4D3004EE675 /* Horologist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84E8D8FF1C54B4D3004EE675 /* HorologistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E8D9171C54B4D3004EE675 /* Build configuration list for PBXNativeTarget "HorologistTests" */;
+			buildPhases = (
+				84E8D8FC1C54B4D3004EE675 /* Sources */,
+				84E8D8FD1C54B4D3004EE675 /* Frameworks */,
+				84E8D8FE1C54B4D3004EE675 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E8D9021C54B4D3004EE675 /* PBXTargetDependency */,
+			);
+			name = HorologistTests;
+			productName = HorologistTests;
+			productReference = 84E8D9001C54B4D3004EE675 /* HorologistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84E8D90A1C54B4D3004EE675 /* HorologistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E8D91A1C54B4D3004EE675 /* Build configuration list for PBXNativeTarget "HorologistUITests" */;
+			buildPhases = (
+				84E8D9071C54B4D3004EE675 /* Sources */,
+				84E8D9081C54B4D3004EE675 /* Frameworks */,
+				84E8D9091C54B4D3004EE675 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E8D90D1C54B4D3004EE675 /* PBXTargetDependency */,
+			);
+			name = HorologistUITests;
+			productName = HorologistUITests;
+			productReference = 84E8D90B1C54B4D3004EE675 /* HorologistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84E8D8E41C54B4D3004EE675 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Rocco Del Priore";
+				TargetAttributes = {
+					84E8D8EB1C54B4D3004EE675 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					84E8D8FF1C54B4D3004EE675 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 84E8D8EB1C54B4D3004EE675;
+					};
+					84E8D90A1C54B4D3004EE675 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 84E8D8EB1C54B4D3004EE675;
+					};
+				};
+			};
+			buildConfigurationList = 84E8D8E71C54B4D3004EE675 /* Build configuration list for PBXProject "Horologist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84E8D8E31C54B4D3004EE675;
+			productRefGroup = 84E8D8ED1C54B4D3004EE675 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E8D8EB1C54B4D3004EE675 /* Horologist */,
+				84E8D8FF1C54B4D3004EE675 /* HorologistTests */,
+				84E8D90A1C54B4D3004EE675 /* HorologistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84E8D8EA1C54B4D3004EE675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E8D8FA1C54B4D3004EE675 /* LaunchScreen.storyboard in Resources */,
+				84E8D8F71C54B4D3004EE675 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E8D8FE1C54B4D3004EE675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E8D9091C54B4D3004EE675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F79C8113B30182778CD6453 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64DC78473F17A38BB7A736A2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Horologist/Pods-Horologist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E28365038A86027647ADFB40 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Horologist/Pods-Horologist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84E8D8E81C54B4D3004EE675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E8D8F21C54B4D3004EE675 /* ViewController.swift in Sources */,
+				84E8D8F01C54B4D3004EE675 /* AppDelegate.swift in Sources */,
+				84E8D91E1C54B52B004EE675 /* Cell.swift in Sources */,
+				84E8D9201C54B572004EE675 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E8D8FC1C54B4D3004EE675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E8D9051C54B4D3004EE675 /* HorologistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E8D9071C54B4D3004EE675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E8D9101C54B4D3004EE675 /* HorologistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84E8D9021C54B4D3004EE675 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E8D8EB1C54B4D3004EE675 /* Horologist */;
+			targetProxy = 84E8D9011C54B4D3004EE675 /* PBXContainerItemProxy */;
+		};
+		84E8D90D1C54B4D3004EE675 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E8D8EB1C54B4D3004EE675 /* Horologist */;
+			targetProxy = 84E8D90C1C54B4D3004EE675 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84E8D8F81C54B4D3004EE675 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E8D8F91C54B4D3004EE675 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84E8D9121C54B4D3004EE675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84E8D9131C54B4D3004EE675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E8D9151C54B4D3004EE675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC5B16E9D74809ED1C89269 /* Pods-Horologist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Horologist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = roccodelpriore.Horologist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84E8D9161C54B4D3004EE675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA196C8A6BC0220C91C5BD08 /* Pods-Horologist.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Horologist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = roccodelpriore.Horologist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84E8D9181C54B4D3004EE675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HorologistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = roccodelpriore.HorologistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Horologist.app/Horologist";
+			};
+			name = Debug;
+		};
+		84E8D9191C54B4D3004EE675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HorologistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = roccodelpriore.HorologistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Horologist.app/Horologist";
+			};
+			name = Release;
+		};
+		84E8D91B1C54B4D3004EE675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HorologistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = roccodelpriore.HorologistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Horologist;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		84E8D91C1C54B4D3004EE675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HorologistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = roccodelpriore.HorologistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Horologist;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84E8D8E71C54B4D3004EE675 /* Build configuration list for PBXProject "Horologist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E8D9121C54B4D3004EE675 /* Debug */,
+				84E8D9131C54B4D3004EE675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E8D9141C54B4D3004EE675 /* Build configuration list for PBXNativeTarget "Horologist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E8D9151C54B4D3004EE675 /* Debug */,
+				84E8D9161C54B4D3004EE675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E8D9171C54B4D3004EE675 /* Build configuration list for PBXNativeTarget "HorologistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E8D9181C54B4D3004EE675 /* Debug */,
+				84E8D9191C54B4D3004EE675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E8D91A1C54B4D3004EE675 /* Build configuration list for PBXNativeTarget "HorologistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E8D91B1C54B4D3004EE675 /* Debug */,
+				84E8D91C1C54B4D3004EE675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84E8D8E41C54B4D3004EE675 /* Project object */;
+}
