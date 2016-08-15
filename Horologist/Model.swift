@@ -33,26 +33,27 @@ class Model : NSObject {
             for carrot: Int in 0...moments.count-1 {
                 let moment: AnyObject! = moments.objectAtIndex(carrot)
                 let assets = PHAsset.fetchAssetsInAssetCollection(moment! as! PHAssetCollection, options: nil)
-                for stick : Int in 0...assets.count-1 {
-                    let asset : PHAsset = assets.objectAtIndex(stick) as! PHAsset
-                    if asset.pixelWidth == 216 && asset.pixelHeight == 290 {
-                        if !self.assets!.containsObject(asset) {
-                            self.assets!.addObject(asset)
-                            self.selected!.addObject(asset)
+                if (assets.count > 0) {
+                    for stick : Int in 0...assets.count-1 {
+                        let asset : PHAsset = assets.objectAtIndex(stick) as! PHAsset
+                        if asset.pixelWidth == 216 && asset.pixelHeight == 290 {
+                            if !self.assets!.containsObject(asset) {
+                                self.assets!.addObject(asset)
+                                self.selected!.addObject(asset)
+                            }
                         }
-                    }
-                    else if asset.pixelWidth == 312 && asset.pixelHeight == 390 {
-                        if !self.assets!.containsObject(asset) {
-                            self.assets!.addObject(asset)
-                            self.selected!.addObject(asset)
+                        else if asset.pixelWidth == 312 && asset.pixelHeight == 390 {
+                            if !self.assets!.containsObject(asset) {
+                                self.assets!.addObject(asset)
+                                self.selected!.addObject(asset)
+                            }
                         }
                     }
                 }
             }
         }
         if self.delegate != nil {
-            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
                 dispatch_async(dispatch_get_main_queue()) {
                     self.delegate.reloadData()
                 }

@@ -125,11 +125,11 @@
 			children = (
 				84E8D8EF1C54B4D3004EE675 /* AppDelegate.swift */,
 				84E8D8F11C54B4D3004EE675 /* ViewController.swift */,
+				84E8D91F1C54B572004EE675 /* Model.swift */,
+				84E8D91D1C54B52B004EE675 /* Cell.swift */,
 				84E8D8F61C54B4D3004EE675 /* Assets.xcassets */,
 				84E8D8F81C54B4D3004EE675 /* LaunchScreen.storyboard */,
 				84E8D8FB1C54B4D3004EE675 /* Info.plist */,
-				84E8D91D1C54B52B004EE675 /* Cell.swift */,
-				84E8D91F1C54B572004EE675 /* Model.swift */,
 			);
 			path = Horologist;
 			sourceTree = "<group>";
